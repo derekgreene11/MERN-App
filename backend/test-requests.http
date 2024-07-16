@@ -1,0 +1,82 @@
+### CREATE five documents.
+POST http://localhost:27017/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Web Dev",
+    "year": "2024",
+    "courseNum": 290
+}
+
+
+### CREATE 2
+POST http://localhost:27017/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "C++ II",
+    "year": "2024",
+    "courseNum": 162
+}
+
+### CREATE 3
+POST http://localhost:27017/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "C++",
+    "year": "2024",
+    "courseNum": 161
+}
+
+### CREATE 4
+POST http://localhost:27017/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Network Security I",
+    "year": "2024",
+    "courseNum": 284
+}
+
+### CREATE 5
+POST http://localhost:27017/courses HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Network Security II",
+    "year": "2023",
+    "courseNum": 285
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:27017/courses HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:27017/courses/64d3b1398146c0d744a4b95b HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:27017/courses/64d3afbb0816f78a7cedf90a HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Web Dev",
+    "year": "2024",
+    "courseNum": 290
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:27017/courses/64d3afbb0816f78a7cedf90a HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:27017/courses HTTP/1.1
+

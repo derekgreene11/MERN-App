@@ -1,0 +1,284 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+/*   ----- Imports  -----  */
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  @import "~react-image-gallery/styles/css/image-gallery.css";
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*   ----- Variables  -----  */
+:root {
+   --moondust:#C6DAE7;
+   --beaverOrange:#D73F09;
+   --lightBlue:#87BED2;
+   --forestGreen:#5C7346;
+   --lightYellow:#D9CA7E;
+   --DarkGreen:#37402D;
+   --translucentBlue: rgba(10, 137, 184, 0.5);
+   --translucentYellow: rgba(217, 202, 126, 0.5);
+ }
+ html {
+   background-image:url('images/tiller-oregon-background.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top left;
+   background-repeat: no-repeat;
+ }
+ /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+ body {       /* Can alternatively define in html {}. */
+   background-color:var(--DarkGreen);
+   color:var(--lightYellow);
+   font-family: "Open Sans", sans-serif;
+   margin:0 auto;
+   padding: 20px;
+   max-width:1200px;
+   border: 10px solid var(--lightYellow);
+ }
+ /*  ----- Page layout blocks -----  */
+ header {
+   background-image:url('images/header-background-green.png');
+   background-color:var(--forestGreen);
+   color:var(--lightBlue);
+   margin:0;
+   padding: 20px;
+   max-width:100%;
+   text-align: center;
+   border-radius: 15px;
+ }
+ .appH {
+  color:var(--lightBlue);
+  font-weight: bold;
+  font-size: 24px;
+ }
+ main {
+   margin:0;
+   padding: 0px;
+   max-width:1200px;
+ }
+ footer {
+   background-color:var(--forestGreen);
+   color:var(--lightBlue);
+   margin:0;
+   padding: 20px;
+   max-width:1200px;
+ }
+ /* ----- Anchors ----- Text links */
+ a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration:none;
+  color:var(--lightYellow);
+  background-color: var(--translucentBlue);
+  border: 1px solid transparent;
+  border-radius: 5px;
+ }
+ a:link {
+   color:var(--lightYellow);
+ }
+ a:hover {
+   color:var(--lightBlue);
+ }
+ /*  ----- Navigation ----- Override text links for navigation only.  */
+ nav {
+   display:flex;
+   justify-content: center;
+   flex-flow: row wrap;
+ }
+ nav a {
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 5px;
+   text-decoration:none;
+   color:var(--lightYellow);
+   background-color: var(--translucentBlue);
+   border: 1px solid transparent;
+   border-radius: 5px;
+ }
+ nav a:hover {
+   text-decoration:none;
+   color:var(--lightBlue);
+   display:flex
+ }
+ nav.local a {
+   padding: 10px 20px;
+   margin: 5px;
+   text-decoration: none;
+   color:var(--lightBlue);
+   background-color: var(--translucentYellow);
+   border: 1px solid transparent;
+   border-radius: 5px;
+   flex-flow: row wrap;
+ }
+ nav.local a:hover {
+   color:var(--lightYellow);
+   display:flex
+ }
+ /*  -----  Typography  ----- */
+ p {
+   color:var(--lightYellow);
+ }
+ li {
+  color:var(--lightBlue);
+ }
+ dt {
+    color:var(--lightBlue);
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "Jersey 20", sans-serif;
+   color:var(--lightBlue);
+ } 
+ /*  ----- Table ----- */
+ table {
+   width: 100%;
+   text-decoration: none;
+   color:var(--lightYellow);
+   border: 1px solid transparent;
+   border-radius: 5px;
+ }
+ caption {
+  color:var(--lightYellow);
+ }
+ thead {
+  padding: 50px 50px;
+   margin: 5px;
+   text-decoration: none;
+   color:var(--lightYellow);
+   border: 1px solid transparent;
+   border-radius: 5px;
+ }
+ tbody {padding: 50px 50px;
+  margin: 5px;
+  text-decoration: none;
+  color:var(--lightYellow);
+  border: 1px solid transparent;
+  border-radius: 1px;}
+ tr {
+  text-decoration: none;
+  color:var(--lightYellow);
+  border: 1px solid transparent;
+  border-radius: 5px;}
+tr:nth-child(even) {
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: var(--translucentYellow);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+ th {
+  text-decoration: none;
+  color:var(--lightYellow);
+  border: 1px solid transparent;
+  border-radius: 1px;
+  text-align: left;}
+ td {
+  text-decoration: none;
+  color:var(--lightBlue);
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 1px;}
+ /*  ----- Form ----- */
+ fieldset {
+   padding: 10px 20px;
+   margin: 5px;
+   text-decoration: none;
+   background-color: var(--translucentBlue);
+   border: 1px solid transparent;
+   border-radius: 5px;
+ }
+   legend {
+   padding: 10px 20px;
+   margin: 5px;
+   text-decoration: none;
+   color:var(--lightBlue);
+   background-color: var(--translucentYellow);
+   border: 1px solid transparent;
+   border-radius: 5px;
+   }
+ label {
+   margin: 0px;
+   text-decoration: none;
+   border: 1px solid transparent;
+   border-radius: 1px;
+ }
+ button {
+   padding: 10px 20px;
+   margin: 10px;
+   text-decoration: none;
+   color:var(--DarkGreen);
+   background-color: var(--translucentYellow);
+   border: 5px solid;
+   border-radius: 5px;
+   font-size: 20px;
+ }
+ input {
+   padding: 10px 20px;
+   margin: 10px;
+   text-decoration: none;
+   color:var(--DarkGreen);
+   background-color: var(--translucentYellow);
+   border: 5px solid;
+   border-radius: 5px;
+ }
+ select {
+   padding: 10px 20px;
+   margin: 10px;
+   text-decoration: none;
+   color:var(--DarkGreen);
+   background-color: var(--translucentYellow);
+   border: 5px solid;
+   border-radius: 5px;
+ }
+ textarea {
+   padding: 40px 50px;
+   margin: 5px;
+   text-decoration: none;
+   color:var(--DarkGreen);
+   background-color: var(--translucentYellow);
+   border: 5px solid ;
+   border-radius: 5px;
+   display:flex;
+   height: 50px;
+   width: 300px;
+ }
+ /* ----- Media ----- */
+ .gallery { 
+   display: flex;
+   flex-flow: row wrap;
+     margin:0; 
+   padding:0;
+ }
+ .gallery figure {
+   width: 320px;
+   margin:1%;
+   padding:1%;
+   background-color: var(--forestGreen);
+ }
+ .gallery figcaption {
+   display:block; 
+   padding: 1% 1% 2% 1%;
+ }
+ .gallery img  {
+     width:100%;
+     margin:0;
+     padding:0;
+ }
+ *#orders{
+  display:flex;
+  justify-content: center;
+ }
+ #orders form{
+  flex-flow: row wrap;
+ }
+ #orderCaption {
+  text-align: left;
+ }
+ /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+ @keyframes App-logo {}
+ /*   ===== TABLET  media query overrides mobile styles ===== */
+ @media all and (min-width: 600px) {}
+ /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+ @media all and (min-width: 1080px) {}
+ /*   ===== PRINT  media query overrides previous styles =====  */
+ @media print {}
