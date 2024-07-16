@@ -10,14 +10,14 @@ Three tier architecutre application utilizing the MERN stack. Application showca
 
 Download node.js and npm 
 
-'sudo apt install nodejs npm'
+`sudo apt install nodejs npm`
 
 Clone the repository
 
-'git clone https://github.com/derekgreene11/MERN-App.git'
+`git clone https://github.com/derekgreene11/MERN-App.git`
 
 Usage
 
-'npm start' 
+`npm start` 
 
 Go to localhost at the port provided: http://localhost:3000/
