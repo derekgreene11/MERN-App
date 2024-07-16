@@ -16,6 +16,8 @@ Clone the repository
 
 `git clone https://github.com/derekgreene11/MERN-App.git`
 
+Setup MongoDB Cluster and add connection string to /backend/.env
+
 Usage
 
 `npm start` 
