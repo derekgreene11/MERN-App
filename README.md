@@ -18,7 +18,7 @@ Clone the repository
 
 Setup MongoDB Cluster and add connection string to /backend/.env
 
-Usage
+## Usage
 
 `npm start` 
 
