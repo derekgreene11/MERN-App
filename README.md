@@ -1,12 +1,12 @@
-#MERN App
+# MERN App
 
 Final project for Web Development CS290 @ OSU
 
-##Description
+## Description
 
 Three tier architecutre application utilizing the MERN stack. Application showcases web development knowledge and allows users to add, edit, and remove courses from the CsCourses table. 
 
-##Getting started
+## Getting started
 
 Download node.js and npm 
 
